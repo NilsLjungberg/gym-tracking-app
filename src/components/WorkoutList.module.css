@@ -1,0 +1,25 @@
+.flex {
+  height: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+li {
+  list-style-type: none;
+  border: none;
+  border-radius: 10px;
+  width: 40%;
+  padding: 70px 20px;
+  text-align: center;
+  margin: 15px 0;
+  background: linear-gradient(
+    to left,
+    rgb(209, 44, 71) 0%,
+    rgba(172, 15, 41, 0.7) 100%
+  );
+  box-shadow: 0 0.1rem 0.7rem 0 rgba(177, 154, 148, 0.7);
+  color: whitesmoke;
+}

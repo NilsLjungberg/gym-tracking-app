@@ -1,0 +1,16 @@
+.header {
+  text-align: center;
+}
+
+h1 {
+  color: rgb(172, 15, 41);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.instruction {
+  color: rgb(172, 15, 41);
+  font-size: 27px;
+  font-weight: 900;
+  margin-bottom: 0;
+}

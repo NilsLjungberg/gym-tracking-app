@@ -1,0 +1,52 @@
+.exercise-input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.exercise {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.number-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 50%;
+  margin-left: 20px;
+  width: 50%;
+}
+
+.sets-reps {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+select {
+  border: none;
+  border-radius: 10px;
+  padding: 3px;
+  height: 100%;
+  box-shadow: 0 0.1rem 0.7rem 0 rgba(177, 154, 148, 0.7);
+}
+
+label {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+input {
+  border: none;
+  border-radius: 15px;
+  padding: 5px 0;
+  box-shadow: 0 0.1rem 0.7rem 0 rgba(177, 154, 148, 0.7);
+}
+
+select,
+input:focus {
+  outline-color: rgb(253, 181, 24);
+}
