@@ -1,10 +1,16 @@
 import React from "react";
 
 import classes from "./Header.module.css";
+import WorkoutSummaryButton from "../UI/WorkoutSummaryButton";
 
-const Header = () => (
+const Header = (props) => (
   <div className={classes.header}>
-    <h1>Workout</h1>
+    <div className={classes.nav}>
+      <h1>Workout Tracker</h1>
+      <WorkoutSummaryButton onClick={props.onShowSummary}>
+        Workout Summary
+      </WorkoutSummaryButton>
+    </div>
     <h3 className={classes.instruction}>Add your completed exercises below</h3>
   </div>
 );

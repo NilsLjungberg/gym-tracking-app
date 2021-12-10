@@ -1,0 +1,22 @@
+.summary {
+  height: 50px;
+  width: 250px;
+  border-radius: 20px;
+  background: linear-gradient(
+    to left,
+    rgb(209, 44, 71) 0%,
+    rgba(172, 15, 41, 0.7) 100%
+  );
+  color: rgb(221, 219, 219);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.summary:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 1rem 0 rgba(177, 154, 148, 0.7);
+}

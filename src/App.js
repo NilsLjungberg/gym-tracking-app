@@ -7,6 +7,7 @@ import WorkoutList from "./components/WorkoutList";
 function App() {
   const [workoutList, setWorkoutList] = useState([]);
   const [array, setArray] = useState(false);
+  const [summaryIsVisible, setSummaryIsVisible] = useState(false);
 
   const addWorkoutHandler = (exercise, sets, reps) => {
     setWorkoutList((prevState) => {
@@ -23,9 +24,17 @@ function App() {
     setArray(true);
   };
 
+  const showSummaryHandler = () => {
+    setSummaryIsVisible(true);
+  };
+
+  const hideSummaryHandler = () => {
+    setSummaryIsVisible(false);
+  };
+
   return (
     <>
-      <Header />
+      <Header onShowSummary={showSummaryHandler} />
       <AddWorkout onAddWorkout={addWorkoutHandler} />
       {array && <WorkoutList workouts={workoutList} />}
     </>
