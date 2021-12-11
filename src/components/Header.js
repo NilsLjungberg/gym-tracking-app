@@ -6,7 +6,7 @@ import WorkoutSummaryButton from "../UI/WorkoutSummaryButton";
 const Header = (props) => (
   <div className={classes.header}>
     <div className={classes.nav}>
-      <h1>Workout Tracker</h1>
+      <h1 className={classes.title}>Workout Tracker</h1>
       <WorkoutSummaryButton onClick={props.onShowSummary}>
         Workout Summary
       </WorkoutSummaryButton>

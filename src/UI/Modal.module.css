@@ -1,4 +1,4 @@
-.error-backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,29 +8,24 @@
   background: rgba(0, 0, 0, 0.75);
 }
 
-.error-modal {
+.modal {
   position: fixed;
-  top: 20vh;
-  left: 25%;
-  width: 45%;
+  height: 100vh;
+  left: 60%;
+  width: 40%;
+  margin: 0 auto;
   z-index: 100;
   overflow: hidden;
   background: whitesmoke;
   color: rgb(172, 15, 41);
-  text-align: center;
   padding: 30px;
-  border-radius: 150px;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 162, 23, 0.8);
-}
-
-.error-title,
-.error-message {
-  margin: 20px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {
   .modal {
-    border-radius: 30px;
-    height: 350px;
+    left: 0%;
+    right: 60%;
+    width: 40%;
   }
 }

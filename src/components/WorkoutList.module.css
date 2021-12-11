@@ -7,7 +7,7 @@
   overflow-y: scroll;
 }
 
-li {
+.listItem {
   list-style-type: none;
   border: none;
   border-radius: 10px;

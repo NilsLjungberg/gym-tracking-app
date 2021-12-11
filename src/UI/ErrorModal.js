@@ -6,20 +6,22 @@ import Button from "./Button";
 import classes from "./ErrorModal.module.css";
 
 const Backdrop = (props) => {
-  return <div className={classes.backdrop} onClick={props.onErrorHandler} />;
+  return (
+    <div className={classes["error-backdrop"]} onClick={props.onErrorHandler} />
+  );
 };
 
 const ModalOverlay = (props) => {
   return (
-    <div className={classes.modal}>
-      <h1>{props.title}</h1>
-      <h2>{props.message}</h2>
+    <div className={classes["error-modal"]}>
+      <h1 className={classes["error-title"]}>{props.title}</h1>
+      <h2 className={classes["error-message"]}>{props.message}</h2>
       <Button
         className={classes.button}
         type="button"
         onClick={props.onErrorHandler}
       >
-        Yes, I want to keep making gains
+        Let me make some gains
       </Button>
     </div>
   );

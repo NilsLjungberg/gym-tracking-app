@@ -57,8 +57,11 @@ const AddWorkout = (props) => {
         <form onSubmit={addExerciseHandler}>
           <div className={classes["exercise-input"]}>
             <div className={classes.exercise}>
-              <label htmlFor="exercise-one">Exercise</label>
+              <label className={classes.label} htmlFor="exercise-one">
+                Exercise
+              </label>
               <input
+                className={classes["exercise-definition"]}
                 type="text"
                 id="exercise-one"
                 name="exercise-one"
@@ -68,8 +71,11 @@ const AddWorkout = (props) => {
             </div>
             <div className={classes["number-input"]}>
               <div className={classes["sets-reps"]}>
-                <label htmlFor="sets">Sets</label>
+                <label className={classes.label} htmlFor="sets">
+                  Sets
+                </label>
                 <select
+                  className={classes.select}
                   name="sets"
                   id="sets"
                   value={setsInput}
@@ -83,8 +89,11 @@ const AddWorkout = (props) => {
                 </select>
               </div>
               <div className={classes["sets-reps"]}>
-                <label htmlFor="reps">Reps</label>
+                <label className={classes.label} htmlFor="reps">
+                  Reps
+                </label>
                 <select
+                  className={classes.select}
                   name="reps"
                   id="reps"
                   value={repsInput}

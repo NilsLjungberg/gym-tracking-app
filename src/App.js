@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import AddWorkout from "./components/AddWorkout";
 import WorkoutList from "./components/WorkoutList";
+import WorkoutSummary from "./components/WorkoutSummary";
 
 function App() {
   const [workoutList, setWorkoutList] = useState([]);
@@ -34,6 +35,12 @@ function App() {
 
   return (
     <>
+      {summaryIsVisible && (
+        <WorkoutSummary
+          onHideSummary={hideSummaryHandler}
+          workouts={workoutList}
+        />
+      )}
       <Header onShowSummary={showSummaryHandler} />
       <AddWorkout onAddWorkout={addWorkoutHandler} />
       {array && <WorkoutList workouts={workoutList} />}

@@ -9,7 +9,7 @@ const WorkoutList = (props) => {
     <Card>
       <div className={classes.flex}>
         {props.workouts.map((workout) => (
-          <li key={workout.id}>
+          <li className={classes.listItem} key={workout.id}>
             <h3>{workout.exercise}</h3>
             <p>
               {workout.sets} Set(s) / {workout.reps} Rep(s)
